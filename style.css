@@ -1,0 +1,127 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+html{
+    font-size: 12px;
+    font-family: Arial, Helvetica, sans-serif;
+}
+.container{
+    width: 100%;
+    height: auto;
+    padding: 50px 100px;
+    background-color: #f7f8fa;
+}
+.title{
+    margin-bottom: 50px;
+    text-align: center;
+    font-size: 2rem;
+    color: #434E5E;
+}
+.wrapper{
+    margin-bottom: 30px;
+    display: flex;
+    justify-content: space-between;
+}
+.content{
+    width: calc((100% - 60px) / 3);
+    background-color: #fff;
+}
+.content-img{
+    position: relative;
+    overflow: hidden;
+}
+.img{
+    display: block;
+    width: 100%;
+}
+.img img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+.svg{
+    width: 100%;
+    height: 100%;
+    display: block;
+    position: absolute;
+    top: 0;
+    left: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: rgba(67,78,94,0.6);
+}
+.mask{
+    position: absolute;
+    left: 0;
+    bottom: -100%;
+    width: 100%;
+    height: 100%;
+    padding: 20px;
+    background-color: rgba(12,127,222,0.95);
+    color: #fff;
+    font-size: 1.3rem;
+    line-height: 25px;
+    overflow: hidden;
+    transition: bottom 0.5s ease-in-out;
+}
+.title-mask{
+    margin-bottom: 15px;
+}
+.content-img:hover .svg{
+    display: none;
+}
+.content-img:hover .mask{
+    bottom: 0;
+    cursor: pointer;
+}
+.content-bottom{
+    padding: 20px;
+}
+.title-content-bottom{
+    text-align: center;
+    margin-bottom: 10px;
+}
+.title-content-bottom a{
+    text-decoration: none;
+    color: #434E5E;
+    font-size: 1.3rem;
+}
+.list-language{
+    list-style-type: none;
+    display: flex;
+    justify-content: space-between;
+    font-weight: bold;
+    color: #fff;
+}
+.item-language{
+    padding: 5px 10px;
+    border-radius: 10rem;
+    -webkit-border-radius: 10rem;
+    -moz-border-radius: 10rem;
+    -ms-border-radius: 10rem;
+    -o-border-radius: 10rem;
+    background-color: #58677c;
+}
+
+.btn{
+    display: block;
+    margin: auto;
+    cursor: pointer;
+    padding: 10px 20px;
+    background-color: #41A4F5;
+    font-size: 1.3rem;
+    font-weight: bold;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    -webkit-border-radius: 5px;
+    -moz-border-radius: 5px;
+    -ms-border-radius: 5px;
+    -o-border-radius: 5px;
+}
+.btn:hover{
+    background-color: #1d93f3;
+}
